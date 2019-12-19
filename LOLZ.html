@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="E:\OTHER PROJECTS\WEB DEV CSS\CALCULATOR\main.css">
+    <link rel="icon" href="favicon.ico">
+    <title>CALCULATOR|CSS GRIDING</title></head>
+<script> //function that display value 
+  function dis(val) 
+  { 
+      document.getElementById("result").value+=val 
+  } 
+    
+  //function that evaluates the digit and return result 
+  function solve() 
+  { 
+      let x = document.getElementById("result").value 
+      let y = eval(x) 
+      document.getElementById("result").value = y 
+  } 
+    
+  //function that clear the display 
+  function clr() 
+  { 
+      document.getElementById("result").value = "" 
+  } 
+</script>
+<body background: linear-gradient(to bottom, #EAE0C8 0%, #DBD1B9 100%);>
+  <h1 class="sarthak">CALCULATOR</h1>
+    <div class="calculator">
+
+        <input type="text" class="calculator-screen" value="0" id="result" >
+      
+        <div class="calculator-keys">
+      
+          <button type="button" class="operator" value="+" onclick="dis('+')">+</button>
+          <button type="button" class="operator" value="-" onclick="dis('-')">-</button>
+          <button type="button" class="operator" value="*" onclick="dis('*')">&times;</button>
+          <button type="button" class="operator" value="/" onclick="dis('/')">&divide;</button>
+      
+          <button type="button" value="7" onclick="dis('7')">7</button>
+          <button type="button" value="8" onclick="dis('8')">8</button>
+          <button type="button" value="9" onclick="dis('9')">9</button>
+      
+      
+          <button type="button" value="4" onclick="dis('4')">4</button>
+          <button type="button" value="5" onclick="dis('5')">5</button>
+          <button type="button" value="6" onclick="dis('6')">6</button>
+      
+      
+          <button type="button" value="1" onclick="dis('1')">1</button>
+          <button type="button" value="2" onclick="dis('2')">2</button>
+          <button type="button" value="3" onclick="dis('3')">3</button>
+      
+      
+          <button type="button" value="0" onclick="dis('0')">0</button>
+          <button type="button" class="decimal" value="." onclick="dis('.')">.</button>
+          <button type="button" class="all-clear" value="all-clear" onclick="clr()">AC</button>
+      
+          <button type="button" class="equal-sign" value="=" onclick="solve()">=</button>
+      
+        </div>
+      </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<hr width="95%" height="3px" color="black">
+<center><h2 >Copyright © - DHRUV_COLOSSUS </h2>  </center>
+
+</body>
+
+</html>
